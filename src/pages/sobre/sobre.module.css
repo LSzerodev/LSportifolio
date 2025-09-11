@@ -46,6 +46,9 @@
 .ContentRight {
   width: 100%;
   height: 100%;
+  overflow-x: hidden; 
+    position: relative; /* se precisar posicionar algo relativo */
+
   display: grid;
   grid-template-columns: repeat(3, auto); /* 3 colunas automáticas */
   justify-content: center; /* centraliza horizontalmente o grid */
@@ -129,8 +132,8 @@
 
   .slideTrack {
     display: flex;
-    /* Ajuste o cálculo se o número de ícones ou o tamanho/espaçamento mudar */
-    /* (largura do ícone + gap) * número de ícones * 2 */
+      width: auto; /* ou use width: max-content se quiser que globamente acompanhe itens */
+    gap: 20px;
     width: calc((80px + 20px) * 11 * 2); 
     animation: slideLeft 25s linear infinite;
   }
