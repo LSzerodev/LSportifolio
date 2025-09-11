@@ -91,12 +91,12 @@
 
 @media screen and (max-width: 514px){
   .ContentFrase{
-    font-size: 1rem;
+    font-size: 12px;
   }
   .ContentInfo{
     margin-top: 180px;
   }
   .ContentInfo h1{
-    font-size: 45px;
+    font-size: 32px;
   }
 }
