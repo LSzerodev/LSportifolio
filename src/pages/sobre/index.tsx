@@ -29,7 +29,7 @@ export default function Sobre() {
   ];
 
   const [activeIcons, setActiveIcons] = useState<number[]>([]); // índices ativos
-  const [isMobile, setisMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   function getRandomIndexes(arrayLength: number, count: number) {
     let indexes: number[] = [];
@@ -39,16 +39,34 @@ export default function Sobre() {
     }
     return indexes;
   }
-
+  
   useEffect(() => {
-    setisMobile(window.innerWidth <= 662)
+    // Função para verificar e atualizar o estado 'isMobile'
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 662);
+    };
 
+    // Executa a função uma vez para definir o estado inicial
+    handleResize();
+
+    // Adiciona o 'ouvinte' para o evento de redimensionamento da janela
+    window.addEventListener('resize', handleResize);
+
+    // Intervalo para a animação do desktop
     const interval = setInterval(() => {
-      setActiveIcons(getRandomIndexes(icons.length, 3)); // pega 3 índices aleatórios
+      // Evita rodar a lógica do desktop se estiver no mobile
+      if (window.innerWidth > 662) { 
+        setActiveIcons(getRandomIndexes(icons.length, 3));
+      }
     }, 3000);
 
-    return () => clearInterval(interval);
+    // ✅ Função de limpeza: remove o ouvinte e o intervalo quando o componente desmontar
+    return () => {
+      window.removeEventListener('resize', handleResize);
+      clearInterval(interval);
+    };
   }, []);
+  
 
   return (
     <div className={styles.Container}>
