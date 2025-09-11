@@ -64,6 +64,7 @@
 
 .gradientProximo{
   font-size: inherit;
+  font-weight: 500;
   color: #4B6CEA;
 }
 
@@ -86,5 +87,16 @@
   .ContentInfo h1{
     font-size: 52px;
   }
+}
 
+@media screen and (max-width: 514px){
+  .ContentFrase{
+    font-size: 1rem;
+  }
+  .ContentInfo{
+    margin-top: 180px;
+  }
+  .ContentInfo h1{
+    font-size: 45px;
+  }
 }
