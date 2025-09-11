@@ -1,0 +1,66 @@
+.Container {
+  width: 100%;
+}
+
+.Header {
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute; /* ou fixed se quiser acompanhar scroll */
+  top: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+
+  background-color: rgba(238, 238, 238, 0.25);
+  border-radius: 500px;
+  border: 1px solid #C4C4C4;
+
+  backdrop-filter: blur(30px);
+
+  padding: 2.3rem 1.5rem;
+  width: 90%; /* ocupa quase toda largura em mobile */
+}
+
+.Nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(1rem, 5vw, 5.25rem); /* espaço entre links que cresce com viewport */
+}
+
+.Nav a {
+  font-size: clamp(0.9rem, 2vw, 1.125rem);
+  text-decoration: none;
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+
+.active{
+  color: white;
+  font-weight: 700 !important;
+}
+
+.inactive{
+  font-weight: 400 !important;
+  color: #E0DDDD;
+}
+
+.sobreInactive {
+  font-weight: 400 !important;
+  color: #2B1717; 
+}
+
+
+@media (max-width: 768px) {
+  .Header {
+    padding: 24px 1rem;
+  }
+
+  .Nav {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}

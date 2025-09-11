@@ -1,0 +1,87 @@
+.Container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+    min-height: 100vh; /* garante altura de tela cheia */
+    background-color: #202020;
+    background-image: url("../../img/Frame-2.webp");
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+
+.Content{
+    
+    display: flex;
+    align-items: center;
+    width: 1280px;
+    flex-direction: column;
+    padding: 120px 20px;
+
+}
+
+.img{
+    width: 100%;
+    height: 296px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.line{
+    max-width: 1440px;
+    margin-top: 50px;
+    height: 1px;
+    background-color: #eee;
+}
+
+.card{
+    width: 100%;
+    margin-top: 88px;
+}
+
+.card h4{
+    padding-bottom: 4px;
+}
+
+.card p{
+    padding-bottom: 12px;
+    color: #747474;
+}
+
+.card span{
+    padding-bottom: 12px;
+    color: #eee;
+    font-weight: 400;    
+}
+
+.ContainerBtn{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    margin-top: 44px;
+}
+
+.ContentBtn{
+    display: flex;
+    gap: 8px;
+}
+
+.btnArrowRight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    padding: 20px 20px;
+    background: linear-gradient(46deg, #2541B1 0%, #6964FE 100%);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.ContainerTransparent{
+    height: 60px;
+    width: 100%;
+}
