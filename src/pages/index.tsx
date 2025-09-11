@@ -30,7 +30,7 @@ export default function Home() {
             <Image
               src={arrow2}
               alt="algo"
-              className={styles.arrowSvgg}
+              className={ styles.arrowSvgg }
             />
           </button>
         </div>

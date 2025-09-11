@@ -30,6 +30,7 @@
   align-items: center;
   flex-direction: column;
   text-align: center;
+   padding: 0px 20px;
 }
 
 .ContentInfo h1{
@@ -72,4 +73,18 @@
 @keyframes pulsar {
   from { transform: translateX(0px); }
   to   { transform: translateX(5px); } /* movem para frente, em direção ao botão */
+}
+
+@media screen and (max-width: 662px){
+  .ContentFrase{
+    width: 100%;
+    font-size: 1rem;
+  }
+  .ContentInfo{
+    margin-top: 180px;
+  }
+  .ContentInfo h1{
+    font-size: 52px;
+  }
+
 }
