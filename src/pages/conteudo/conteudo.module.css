@@ -2,11 +2,10 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    
     min-height: 100vh; /* garante altura de tela cheia */
     background-color: #202020;
     background-image: url("../../img/Frame-2.webp");
-    
+    font-family: "Sora", sans-serif;
     background-repeat: no-repeat;
     background-size: cover;
   
