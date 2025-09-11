@@ -97,6 +97,7 @@
     margin-top: 180px;
   }
   .ContentInfo h1{
+    padding-bottom: 12px;
     font-size: 32px;
   }
 }

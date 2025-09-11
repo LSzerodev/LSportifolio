@@ -9,6 +9,7 @@
 
 .Content{
     max-width: 1440px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -132,6 +133,8 @@
   }
 
   .slideTrack {
+    
+    
     width: fit-content;
     min-width: 0;
     display: flex;
@@ -140,7 +143,11 @@
   }
 
   .btn{
-    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    white-space: nowrap;       /* evita quebras de linha dentro do botão */
   }
  
 
