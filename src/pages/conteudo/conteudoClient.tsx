@@ -45,6 +45,7 @@ export default function ConteudoClient({ conteudo }: { conteudo?: any[] }) {
                 className={styles.img}
                 width={1280}
                 height={296}
+                quality={100}
               />
             ) : (
               <div>
