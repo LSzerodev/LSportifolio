@@ -9,7 +9,7 @@ import { asLink } from "@prismicio/client"; // Faltava importar a função 'asLi
 
 // Corrigido: Nomes de arquivos em 'import' não podem ter espaços.
 // Renomeie os arquivos no seu projeto para corresponder a estes nomes.
-import arrows from "../../img/icons/arrow/arrow left.svg";
+import arrows from "../../img/icons/arrow/arrow aqui.svg";
 import arrowRght from "../../img/icons/arrow/right-arrow 1.svg";
 
 export default function ConteudoClient({ conteudo }: { conteudo?: any[] }) {
@@ -70,9 +70,9 @@ export default function ConteudoClient({ conteudo }: { conteudo?: any[] }) {
             {/* Correção: O 'Link' do Next.js deve envolver o elemento <a> ou o botão */}
             
               <Link href={ asLink(item.data.link) || "/conteudo"} >
-                <a className={styles.btn}  >
+                <button className={styles.btn}  >
                   Clique no projeto
-                </a>
+                </button>
               </Link>
           
             <div className={styles.line}></div>
