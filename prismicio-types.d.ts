@@ -116,6 +116,17 @@ interface ConteudoDocumentData {
    * - **Documentation**: https://prismic.io/docs/fields/text
    */
   describe: prismic.KeyTextField;
+
+  /**
+   * link field in *conteudo*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: conteudo.link
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/fields/link
+   */
+  link: prismic.LinkField<string, string, unknown, prismic.FieldState, never>;
 }
 
 /**

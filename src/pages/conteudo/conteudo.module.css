@@ -41,7 +41,8 @@
 }
 
 .card h4{
-    padding-bottom: 4px;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
 .card p{
@@ -83,4 +84,24 @@
 .ContainerTransparent{
     height: 60px;
     width: 100%;
+}
+
+.btn {
+  /* Adicione esta linha para corrigir o problema */
+  display: inline-block; 
+
+  /* Suas propriedades originais */
+  padding: 10px 40px;
+  border-radius: 500px;
+  border: none;
+  margin-top: 16px;
+  font-family: "Sora", sans-serif;
+
+  /* Propriedades recomendadas para links que parecem botões */
+  background-color: #0070f3; /* Adicione uma cor de fundo */
+  color: white;             /* Adicione uma cor para o texto */
+  text-decoration: none;    /* Remove o sublinhado padrão do link */
+  cursor: pointer;          /* Mostra o cursor de "mãozinha" ao passar o mouse */
+  text-align: center;       /* Centraliza o texto, caso necessário */
+  transition: background-color 0.2s ease-in-out; /* Efeito suave no hover */
 }
