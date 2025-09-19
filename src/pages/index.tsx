@@ -4,6 +4,7 @@ import Image from "next/image";
 import img1 from "../img/a1.png";
 import arrow from '../img/icons/arrow/Arrow 2.svg'
 import arrow2 from '../img/icons/arrow/arrow aqui.svg'
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -26,7 +27,9 @@ export default function Home() {
               alt="algo"
               className={styles.arrowSvg}
             />
-            Contate-me
+            <Link href={'https://wa.me/5567998797391'}>
+              Contate-me
+            </Link>
             <Image
               src={arrow2}
               alt="algo"

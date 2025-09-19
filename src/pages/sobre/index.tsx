@@ -12,6 +12,7 @@ import react from "../../img/icons/react.svg";
 import firebase from "../../img/icons/firebase.svg";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 export default function Sobre() {
   const icons = [
@@ -89,7 +90,9 @@ export default function Sobre() {
             habilidades na prática e de como transformo ideias em soluções
             digitais eficientes e bem estruturadas.
           </p>
-          <button className={styles.btn}>CLIQUE EM CONTEUDO</button>
+          <Link href={'https://wa.me/5567998797391'}>
+            <button className={styles.btn}>Contate-me</button>
+          </Link>
         </div>
         <div className={styles.ContentRight}>
           {
