@@ -45,7 +45,6 @@ export default function ConteudoClient({ conteudo }: { conteudo?: any[] }) {
     <div className={styles.Container}>
       <div className={styles.Content}>
         {currentItems.map((item) => (
-          // Melhoria: Usar um ID único do item como 'key' em vez do index.
           <section className={styles.card} key={item.id}>
             {item.data?.img?.url ? (
               <Image

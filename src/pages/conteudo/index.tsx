@@ -12,6 +12,7 @@ export async function getServerSideProps() {
   return {
     props: {
       conteudo,
-    }
+    },
+    revalidate: 60,
   };
 }
