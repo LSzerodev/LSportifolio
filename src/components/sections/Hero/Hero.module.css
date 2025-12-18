@@ -19,7 +19,6 @@
   justify-content: end;
   padding-left: 3.9375rem;
   padding-bottom: 9.4375rem;
-
   color: #eeeeee;
 }
 
@@ -37,12 +36,12 @@
 /* ======= MEDIA QUERIES - TABLET ======= */
 @media (max-width: 1024px) {
   .HeroSection {
-    height: 800px;
+    height: 90vh;
   }
 
   .TextHero {
     padding-left: 2rem;
-    padding-bottom: 5rem;
+    padding-bottom: 125px;
   }
 
   .TextHero h2 {
@@ -58,7 +57,7 @@
 /* ======= MEDIA QUERIES - MOBILE ======= */
 @media (max-width: 768px) {
   .HeroSection {
-    height: 600px;
+    height: 90vh;
     background-size: cover;
     background-position: center;
     transform: scale(1) !important; /* Força scale 1 em mobile */
@@ -66,7 +65,7 @@
 
   .TextHero {
     padding-left: 1.5rem;
-    padding-bottom: 3rem;
+    padding-bottom: 5.625rem;
   }
 
   .TextHero h2 {
@@ -82,12 +81,12 @@
 /* ======= MEDIA QUERIES - SMALL MOBILE ======= */
 @media (max-width: 480px) {
   .HeroSection {
-    height: 500px;
+    height: 90vh;
   }
 
   .TextHero {
     padding-left: 1rem;
-    padding-bottom: 2rem;
+    padding-bottom: 6.25rem;
   }
 
   .TextHero h2 {
