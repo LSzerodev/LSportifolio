@@ -1,0 +1,105 @@
+.Container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh; /* garante altura de tela cheia */
+  background-color: #202020;
+  background-image: url("../../img/Frame-2.webp");
+  font-family: "Poppins", sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Content {
+  display: flex;
+  align-items: center;
+  width: 1280px;
+  flex-direction: column;
+  padding: 120px 20px;
+}
+
+.img {
+  width: 100%;
+  height: 296px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.line {
+  max-width: 1440px;
+  margin-top: 50px;
+  height: 1px;
+  background-color: #eee;
+}
+
+.card {
+  width: 100%;
+  margin-top: 88px;
+}
+
+.card h4 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.card p {
+  padding-bottom: 12px;
+  color: #747474;
+}
+
+.card span {
+  padding-bottom: 12px;
+  color: #eee;
+  font-weight: 400;
+}
+
+.ContainerBtn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  margin-top: 44px;
+}
+
+.ContentBtn {
+  display: flex;
+  gap: 8px;
+}
+
+.btnArrowRight,
+.btnArrowLeft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  padding: 20px 20px;
+  background: linear-gradient(46deg, #2541b1 0%, #6964fe 100%);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.ContainerTransparent {
+  height: 60px;
+  width: 100%;
+}
+
+.btn {
+  /* Adicione esta linha para corrigir o problema */
+  display: inline-block;
+
+  /* Suas propriedades originais */
+  padding: 10px 40px;
+  border-radius: 500px;
+  border: none;
+  margin-top: 16px;
+  font-family: "Poppins", sans-serif;
+
+  /* Propriedades recomendadas para links que parecem botões */
+  background-color: #0070f3; /* Adicione uma cor de fundo */
+  color: white; /* Adicione uma cor para o texto */
+  text-decoration: none; /* Remove o sublinhado padrão do link */
+  cursor: pointer; /* Mostra o cursor de "mãozinha" ao passar o mouse */
+  text-align: center; /* Centraliza o texto, caso necessário */
+  transition: background-color 0.2s ease-in-out; /* Efeito suave no hover */
+}

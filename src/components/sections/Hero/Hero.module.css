@@ -1,0 +1,101 @@
+/* ======= MEU HERO ======= */
+.HeroSection {
+  width: 100%;
+  max-width: 100%;
+  height: 1180px;
+  background-image: url("../../../img/img-is-sections/Frame\ 205.png");
+  position: relative;
+  z-index: 1;
+  will-change: transform;
+  overflow: hidden;
+  transform-origin: center center;
+  contain: layout style paint;
+}
+
+.TextHero {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding-left: 3.9375rem;
+  padding-bottom: 9.4375rem;
+
+  color: #eeeeee;
+}
+
+.TextHero h2 {
+  font-size: 6.625rem;
+  width: 70%;
+  font-family: "Clash Display", sans-serif;
+  font-weight: 200;
+}
+
+.TextHero h1 {
+  font-size: 12.75rem;
+}
+
+/* ======= MEDIA QUERIES - TABLET ======= */
+@media (max-width: 1024px) {
+  .HeroSection {
+    height: 800px;
+  }
+
+  .TextHero {
+    padding-left: 2rem;
+    padding-bottom: 5rem;
+  }
+
+  .TextHero h2 {
+    font-size: 4rem;
+    width: 80%;
+  }
+
+  .TextHero h1 {
+    font-size: 8rem;
+  }
+}
+
+/* ======= MEDIA QUERIES - MOBILE ======= */
+@media (max-width: 768px) {
+  .HeroSection {
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    transform: scale(1) !important; /* Força scale 1 em mobile */
+  }
+
+  .TextHero {
+    padding-left: 1.5rem;
+    padding-bottom: 3rem;
+  }
+
+  .TextHero h2 {
+    font-size: 2rem;
+    width: 90%;
+  }
+
+  .TextHero h1 {
+    font-size: 4rem;
+  }
+}
+
+/* ======= MEDIA QUERIES - SMALL MOBILE ======= */
+@media (max-width: 480px) {
+  .HeroSection {
+    height: 500px;
+  }
+
+  .TextHero {
+    padding-left: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  .TextHero h2 {
+    font-size: 1.5rem;
+    width: 95%;
+  }
+
+  .TextHero h1 {
+    font-size: 3rem;
+  }
+}

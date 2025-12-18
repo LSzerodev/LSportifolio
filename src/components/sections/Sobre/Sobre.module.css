@@ -1,0 +1,311 @@
+/* MEU SOBRE */
+.ContainerSobre {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100svh;
+  position: relative;
+  z-index: 10;
+  background-color: #eeeeee;
+}
+
+.ArrowDown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  margin-bottom: 120px;
+  background-color: transparent;
+}
+
+.SobreTitle {
+  flex: 1;
+  font-family: "Poppins", sans-serif;
+  font-size: 4.5rem;
+  text-align: center;
+  font-weight: 400;
+  line-height: 120%;
+  color: #202020;
+  max-width: 40ch;
+  margin-inline: auto;
+  margin-bottom: 5rem;
+
+  will-change: transform, opacity;
+  -webkit-font-smoothing: antialiased;
+}
+
+.FormCentral {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #202020;
+  border: 10px solid #eeeeee;
+  margin-bottom: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Carrosel {
+  overflow: hidden;
+  width: 100%;
+}
+
+.Track {
+  display: flex;
+  gap: 42px;
+  width: max-content;
+  animation: scroll 25s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.globoAbstract {
+  width: 37px;
+  height: 37px;
+}
+
+.Carrosel .Item {
+  display: flex;
+  align-items: center;
+  gap: 42px;
+}
+
+.Carrosel .Item span {
+  color: #6e9e15;
+  font-size: 3.25rem;
+  font-weight: 400;
+}
+
+/* ==== Etapas ==== */
+
+.ContainerEtapas {
+  width: 100%;
+  min-height: 100svh;
+  padding: 0px 55px;
+}
+
+.etapaInfo {
+  margin-top: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 350px;
+  height: 50px;
+  background-color: #2b2b2b;
+  border: 2px solid #414141;
+  border-radius: 20px;
+  color: #ffffff;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+.EtapasContent {
+  width: 100%;
+  margin-top: 72px;
+}
+
+.EtapasContentt {
+  display: flex;
+  align-items: center;
+}
+
+.stepNumber {
+  font-size: 10.5625rem;
+  color: rgba(133, 238, 0, 0.95);
+  font-weight: bold;
+}
+
+.stepBullet {
+  margin-left: 82px;
+  width: 20px;
+  height: 20px;
+  background-color: #a8e25e;
+  border-radius: 50%;
+}
+
+.stepTitle {
+  margin-left: 64px;
+  color: #eeeeee;
+  font-size: 93px;
+}
+
+.EtapaRow {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-bottom: 44px;
+  margin-bottom: 44px;
+  transition: all 2s ease;
+
+}
+
+.EtapaRow:hover{
+  transform: translateX(50px);
+  transition: all 0.5s ease;
+
+}
+
+.EtapaRow::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 2px;
+  background-color: #414141;
+}
+
+/* ======= MEDIA QUERIES - TABLET ======= */
+@media (max-width: 1024px) {
+  .SobreTitle {
+    font-size: 3rem;
+    padding: 0 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .Carrosel .Item span {
+    font-size: 2.5rem;
+  }
+
+  .ContainerEtapas {
+    padding: 0px 32px;
+  }
+
+  .stepNumber {
+    font-size: 7rem;
+  }
+
+  .stepTitle {
+    font-size: 60px;
+    margin-left: 32px;
+  }
+
+  .stepBullet {
+    margin-left: 48px;
+  }
+}
+
+/* ======= MEDIA QUERIES - MOBILE ======= */
+@media (max-width: 768px) {
+  .ContainerSobre {
+    min-height: auto;
+    padding-bottom: 2rem;
+  }
+
+  .ArrowDown {
+    height: 30px;
+    margin-bottom: 0px;
+  }
+
+  .FormCentral {
+    width: 60px;
+    height: 60px;
+    border: 8px solid #eeeeee;
+    margin-bottom: 40px;
+  }
+
+  .SobreTitle {
+    font-size: 1.75rem;
+    padding: 0 1.5rem;
+    line-height: 130%;
+    max-width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .Carrosel .Item {
+    gap: 24px;
+  }
+
+  .Carrosel .Item span {
+    font-size: 1.5rem;
+  }
+
+  .globoAbstract {
+    width: 28px;
+    height: 28px;
+  }
+
+  .ContainerEtapas {
+    padding: 0px 1.5rem;
+    min-height: auto;
+  }
+
+  .etapaInfo {
+    margin-top: 40px;
+    max-width: 100%;
+    height: 45px;
+    font-size: 0.9rem;
+  }
+
+  .EtapasContent {
+    margin-top: 48px;
+  }
+
+  .EtapaRow {
+    flex-wrap: wrap;
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+  }
+
+  .stepNumber {
+    font-size: 4rem;
+  }
+
+  .stepBullet {
+    width: 16px;
+    height: 16px;
+    margin-left: 24px;
+  }
+
+  .stepTitle {
+    font-size: 1.5rem;
+    margin-left: 16px;
+    width: 100%;
+    margin-top: 8px;
+  }
+}
+
+/* ======= MEDIA QUERIES - SMALL MOBILE ======= */
+@media (max-width: 480px) {
+  .SobreTitle {
+    font-size: 1.5rem;
+    padding: 0 1rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .Carrosel .Item span {
+    font-size: 1.25rem;
+  }
+
+  .globoAbstract {
+    width: 24px;
+    height: 24px;
+  }
+
+  .ContainerEtapas {
+    padding: 0px 1rem;
+  }
+
+  .stepNumber {
+    font-size: 3rem;
+  }
+
+  .stepTitle {
+    font-size: 1.25rem;
+    margin-left: 12px;
+  }
+
+  .stepBullet {
+    margin-left: 16px;
+  }
+}

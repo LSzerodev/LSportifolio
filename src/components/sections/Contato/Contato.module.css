@@ -1,0 +1,199 @@
+.ContatosContainer {
+  width: 100%;
+  padding: 80px 55px;
+}
+
+.ContatosWrapper {
+  display: flex;
+  gap: 32px;
+}
+
+.ContactCard {
+  flex: 1;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.ContactTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-family: 'Clash Display', sans-serif;
+  padding-bottom: 20px;
+}
+
+.ContactTitle {
+
+  font-weight: 600;
+}
+
+.Subtle {
+  color: #777;
+  margin-left: 6px;
+}
+
+.ArrowBtn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.ContactLinks {
+  display: flex;
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+.ContactLink {
+  height: 52px;
+  border-radius: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+}
+
+.ContactLink span{
+    font-family: 'Clash Display', sans-serif;
+}
+
+.LinkedIn { background: #0A66C2; }
+.Instagram { background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF); }
+.WhatsApp { background: #25D366; }
+.TikTok { background: #000; }
+.GitHub { background: #111; }
+
+.PreviewCard {
+  flex: 3;
+  background: #f2f2f2;
+  border-radius: 24px;
+  position: relative;
+  overflow: hidden;
+  min-height: 500px;
+}
+
+.PreviewLabel {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  font-size: 14px;
+  opacity: 0.7;
+  z-index: 2;
+}
+.PreviewImageWrapper {
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+}
+.PreviewImageWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ======= MEDIA QUERIES - TABLET ======= */
+@media (max-width: 1024px) {
+  .ContatosContainer {
+    padding: 60px 32px;
+  }
+
+  .PreviewCard {
+    min-height: 400px;
+  }
+
+  .PreviewImageWrapper {
+    min-height: 400px;
+  }
+
+  .PreviewImageWrapper img {
+    width: 170%;
+  }
+
+}
+
+/* ======= MEDIA QUERIES - MOBILE ======= */
+@media (max-width: 768px) {
+  .ContatosContainer {
+    padding: 40px 1.5rem;
+  }
+
+  .ContatosWrapper {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .ContactCard {
+    padding: 20px;
+  }
+
+  .ContactTop {
+    padding-bottom: 16px;
+  }
+
+  .ContactTitle {
+    font-size: 0.9rem;
+  }
+
+  .ContactLink {
+    height: 48px;
+    font-size: 0.9rem;
+  }
+
+  .PreviewCard {
+    min-height: 350px;
+  }
+
+  .PreviewImageWrapper {
+    min-height: 350px;
+  }
+
+      .PreviewImageWrapper img {
+        width: 170%;
+        object-fit: cover;
+      }
+
+  .PreviewLabel {
+    top: 16px;
+    left: 16px;
+    font-size: 12px;
+  }
+}
+
+/* ======= MEDIA QUERIES - SMALL MOBILE ======= */
+@media (max-width: 480px) {
+  .ContatosContainer {
+    padding: 32px 1rem;
+  }
+
+  .ContactCard {
+    padding: 16px;
+  }
+
+  .ContactLink {
+    height: 44px;
+    font-size: 0.85rem;
+  }
+
+  .PreviewCard {
+    min-height: 280px;
+  }
+
+  .PreviewImageWrapper img {
+    width: 230%;
+  
+    object-fit: cover;
+  }
+}
+
